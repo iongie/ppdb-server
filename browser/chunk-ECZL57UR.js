@@ -1,1 +1,0 @@
-import{g as o,i,x as s}from"./chunk-PAL3AGRA.js";var l=(()=>{let t=class t{constructor(){this.url=new i(""),this.getUrl=this.url.asObservable()}updateUrl(e){return o(this,null,function*(){this.url.next(e)})}};t.\u0275fac=function(a){return new(a||t)},t.\u0275prov=s({token:t,factory:t.\u0275fac,providedIn:"root"});let r=t;return r})();export{l as a};

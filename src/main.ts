@@ -27,7 +27,8 @@ async function bootstrap() {
           '*.gstatic.com',
           "data:",
           '*.tangerangselatankota.go.id',
-          '*.googleapis.com'
+          '*.googleapis.com',
+          '*.clouddiskominfo.tangerangselatankota.go.id/'
         ],
         'img-src': [
           `'self'`,
@@ -35,12 +36,14 @@ async function bootstrap() {
           '*.googletagmanager.com',
           '*.googleapis.com',
           '*.gstatic.com',
+          '*.clouddiskominfo.tangerangselatankota.go.id/'
         ],
         'script-src': [
           `'self'`,
           '*.google.com',
           '*.gstatic.com',
-          '*.googleapis.com'
+          '*.googleapis.com',
+          '*.clouddiskominfo.tangerangselatankota.go.id/'
         ],
         'manifest-src': [`'self'`],
         'frame-src': [
@@ -50,6 +53,7 @@ async function bootstrap() {
           '*.gstatic.com',
           '*.google.com',
           '*.youtube.com',
+          '*.clouddiskominfo.tangerangselatankota.go.id/'
         ],
         'style-src': [
           `'self'`,
@@ -58,7 +62,8 @@ async function bootstrap() {
         ],
         'script-src-attr': [
           `self`,
-          `'unsafe-inline'`
+          `'unsafe-inline'`,
+          '*.clouddiskominfo.tangerangselatankota.go.id/'
         ]
       },
     },

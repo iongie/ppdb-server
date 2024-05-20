@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Request } from 'express';
+import { env } from 'process';
 
 @Injectable()
 export class CekApiService {
@@ -11,6 +12,6 @@ export class CekApiService {
             ip = ip.split('::ffff:')[1]; // Mengubah format IPv6 ke IPv4 jika perlu
           }
         }
-        return ip;
+        return process.env['SERVER'];
     }
 }

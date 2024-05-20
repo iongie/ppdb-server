@@ -28,7 +28,8 @@ async function bootstrap() {
           "data:",
           '*.tangerangselatankota.go.id',
           '*.googleapis.com',
-          '*.clouddiskominfo.tangerangselatankota.go.id/'
+          '*.clouddiskominfo.tangerangselatankota.go.id',
+          '*.google-analytics.com'
         ],
         'img-src': [
           `'self'`,
@@ -36,14 +37,18 @@ async function bootstrap() {
           '*.googletagmanager.com',
           '*.googleapis.com',
           '*.gstatic.com',
-          '*.clouddiskominfo.tangerangselatankota.go.id/'
+          '*.clouddiskominfo.tangerangselatankota.go.id',
+          '*.googletagmanager.com',
+          '*.google-analytics.com'
         ],
         'script-src': [
           `'self'`,
           '*.google.com',
           '*.gstatic.com',
           '*.googleapis.com',
-          '*.clouddiskominfo.tangerangselatankota.go.id/'
+          '*.clouddiskominfo.tangerangselatankota.go.id',
+          '*.googletagmanager.com',
+          '*.google-analytics.com'
         ],
         'manifest-src': [`'self'`],
         'frame-src': [
@@ -53,17 +58,25 @@ async function bootstrap() {
           '*.gstatic.com',
           '*.google.com',
           '*.youtube.com',
-          '*.clouddiskominfo.tangerangselatankota.go.id/'
+          '*.clouddiskominfo.tangerangselatankota.go.id',
+          '*.googletagmanager.com',
+          '*.google-analytics.com',
+          'https://clouddiskominfo.tangerangselatankota.go.id/'
         ],
         'style-src': [
           `'self'`,
           `'unsafe-inline'`,
-          '*.googleapis.com'
+          '*.googleapis.com',
+          '*.clouddiskominfo.tangerangselatankota.go.id',
+          '*.googletagmanager.com',
+          '*.google-analytics.com'
         ],
         'script-src-attr': [
           `self`,
           `'unsafe-inline'`,
-          '*.clouddiskominfo.tangerangselatankota.go.id/'
+          '*.clouddiskominfo.tangerangselatankota.go.id',
+          '*.googletagmanager.com',
+          '*.google-analytics.com'
         ]
       },
     },

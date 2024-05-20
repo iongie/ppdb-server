@@ -1,1 +1,0 @@
-import{d as o,f as a,u as i}from"./chunk-XYNOEHGQ.js";var l=(()=>{let t=class t{constructor(){this.url=new a(""),this.dapatkanUrl=this.url.asObservable()}perbaruiUrl(e){return o(this,null,function*(){this.url.next(e)})}};t.\u0275fac=function(n){return new(n||t)},t.\u0275prov=i({token:t,factory:t.\u0275fac,providedIn:"root"});let r=t;return r})();export{l as a};

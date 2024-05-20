@@ -1,1 +1,0 @@
-import{b as n,c as s}from"./chunk-CAF53LLR.js";import{Ia as i,d as t,j as r,y as o}from"./chunk-XYNOEHGQ.js";var v=(u,f)=>t(void 0,null,function*(){let a=o(i),m=o(s);yield new Promise(c=>setTimeout(c,100));let e=yield r(m.getLogin);return console.log(new Date(e.auth.expires_in),e.auth.expires_in),e!==n?!0:(a.navigate(["forbidden"]),!1)});export{v as a};

@@ -1,17 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import { Request } from 'express';
-import { env } from 'process';
+import * as fs from 'fs';
+import { promisify } from 'util';
 
 @Injectable()
 export class CekApiService {
-    getIpAddress(request: Request) {
-        let ip = request.headers['x-forwarded-for'] || request.socket.remoteAddress;
-        if (typeof ip === 'string') {
-          ip = ip.split(',')[0]; // Jika ada beberapa alamat IP, ambil yang pertama
-          if (ip.includes('::ffff:')) {
-            ip = ip.split('::ffff:')[1]; // Mengubah format IPv6 ke IPv4 jika perlu
-          }
+    readFileAsync = promisify(fs.readFile);
+
+    async getIpAddress() {
+        try {
+            return await this.readFileAsync(`./ip/ip.json`) 
+        } catch (error) {
+            return error   
         }
-        return process.env['SERVER'];
     }
 }

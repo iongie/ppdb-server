@@ -10,14 +10,18 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     AppRoutingModule,
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'browser'),
-      exclude: ['/api/(.*)'],
+    ServeStaticModule.forRoot(
+      {
+        rootPath: join(__dirname, '..', 'browser'),
+        exclude: ['/api/(.*)'],
+      },
+    ),
+    ConfigModule.forRoot({
+      isGlobal: true,
     }),
-    CekApiModule,
-    ConfigModule.forRoot()
+    CekApiModule
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
